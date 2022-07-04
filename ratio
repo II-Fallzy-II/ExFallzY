@@ -1,0 +1,84 @@
+_G.Fuck = true
+
+local Lmao = {"Clean_us"}
+if table.find(Lmao, game:GetService("Players").LocalPlayer.Name) then
+
+local Players = game:GetService("Players")
+local Lp = Players.LocalPlayer 
+local Character = Lp.Character or Lp.CharacterAdded:Wait()
+local Humanoid = Character.Humanoid
+local user = tostring(game.Players.LocalPlayer.UserId)
+local FUCKNIGGERS = {"None"}
+
+while _G.Fuck do
+wait(0.5)
+workspace.Merchants.ExpertiseMerchant.Clickable.Retum:FireServer()
+wait(0.5)
+for i,v in pairs(game:GetService("Workspace").UserData["User_"..user].Data:GetDescendants()) do
+if v:IsA("StringValue") and v.Name == "MissionObjective" and v.Value == "Quests" then
+repeat wait(1)
+ workspace.Merchants.QuestFishMerchant.Clickable.Retum:FireServer()
+    wait(0.5)
+  for i,v in pairs(Lp.Backpack:GetChildren()) do 
+    if v:IsA("Tool") and string.find(v.Name, "Package") then 
+        Humanoid:EquipTool(v)
+        v:Activate()
+        wait(0.5)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.BetterDrinkMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.DrinkMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.FlailMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.QuestFishMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.QuestMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.KrizmaMerch.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.SwordMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.SniperMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.Boat1Merchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.Boat2Merchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.Boat3Merchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.Boat4Merchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1254, 218, -1173)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.EmoteMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.AffinityMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1548.90002, 263.298401, 2132.40039, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.FishMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Merchants.ExpertiseMerchant.Torso.CFrame
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1171, 216, 11137)
+wait(0.3)
+game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass'Humanoid':UnequipTools()
+end
+end
+game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass'Humanoid':UnequipTools()-- unequiping tool
+until  game.Workspace.UserData["User_"..user].Data.MissionDifficulty.Value == "Hard" do
+workspace.UserData["User_"..user].Stats:FireServer()
+end
+end
+
+if v:IsA("StringValue") and v.Name == "MissionObjective" and not table.find(FUCKNIGGERS, v.Value)then
+workspace.UserData["User_"..user].Stats:FireServer()
+wait(0.5)
+workspace.Merchants.ExpertiseMerchant.Clickable.Retum:FireServer()
+end
+end
+end
+end
+
+
+
