@@ -1,5 +1,4 @@
-_G.Fuck = true
-
+if _G.Fuck == true then--checks if true then do it
 local Lmao = {"ChildSte_ler"}
 if table.find(Lmao, game:GetService("Players").LocalPlayer.Name) then
 
@@ -79,6 +78,4 @@ end
 end
 end
 end
-
-
-
+end
