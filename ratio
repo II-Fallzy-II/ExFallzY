@@ -1,6 +1,6 @@
 _G.Fuck = true
 
-local Lmao = {"Clean_us"}
+local Lmao = {"ChildSte_ler"}
 if table.find(Lmao, game:GetService("Players").LocalPlayer.Name) then
 
 local Players = game:GetService("Players")
