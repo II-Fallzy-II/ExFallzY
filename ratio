@@ -1,6 +1,8 @@
-if _G.Fuck == true then--checks if true then do it
+if _G.Fuck == true then --checks if true then do it
 local Lmao = {"ChildSte_ler"}
 if table.find(Lmao, game:GetService("Players").LocalPlayer.Name) then
+
+Print("passed 1-3")
 
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer 
@@ -8,6 +10,8 @@ local Character = Lp.Character or Lp.CharacterAdded:Wait()
 local Humanoid = Character.Humanoid
 local user = tostring(game.Players.LocalPlayer.UserId)
 local FUCKNIGGERS = {"None"}
+
+print("passed 2')
 
 while _G.Fuck do
 wait(0.5)
@@ -79,3 +83,4 @@ end
 end
 end
 end
+print("passed 3")
