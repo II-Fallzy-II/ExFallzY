@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/BingBao"))()
-local Window = Library.CreateLib("C.H OPL Hub || Beta v2 -- NOT FINISHED", "DarkTheme")
+local Window = Library.CreateLib("C.H OPL Hub || Beta v2 -- NOT FINISHED (fixed farms)", "DarkTheme")
 local Tab = Window:NewTab("DF Farm")
 local Section = Tab:NewSection("Compass")
 
