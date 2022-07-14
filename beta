@@ -1,0 +1,288 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/BingBao"))()
+local Window = Library.CreateLib("C.H OPL Hub || Beta v2 -- NOT FINISHED", "DarkTheme")
+local Tab = Window:NewTab("DF Farm")
+local Section = Tab:NewSection("Compass")
+
+--
+Section:NewButton("Get Compass", "yuh", function()
+    local args = {[1] = "Claim1"}
+workspace.Merchants.QuestMerchant.Clickable.Retum:FireServer(unpack(args))
+end)
+
+
+Section:NewButton("Tp To Compass", "Cframe teleportation", function()
+   local Players = game:GetService("Players")
+local Lp = Players.LocalPlayer
+local Character = Lp.Character or Lp.CharacterAdded:Wait()
+local Backpack = Lp.Backpack
+if Backpack:FindFirstChild("Compass") then 
+Character.HumanoidRootPart.CFrame = CFrame.new(Backpack.Compass.Poser.Value)
+else 
+    print("No compass or compass is equipped")
+end
+end)
+Section:NewToggle("AutoPickup Dropped Compasses", "well uhh yknow lol", function(state)
+    if state then
+              _G.Compass = true
+local plr=game:GetService'Players'.LocalPlayer---------compass stealing
+local find='Compass' 
+while _G.Compass do
+local char=plr.Character or plr.CharacterAdded:Wait()
+local HRP=char:WaitForChild'HumanoidRootPart'
+for i,v in next, workspace:GetChildren() do
+local Handle=v:FindFirstChild'Handle'
+if v:IsA'Tool' and string.find(v.Name:lower(), find:lower()) and Handle then
+Handle.CFrame=HRP.CFrame
+end
+end
+task.wait()
+end
+    else
+   _G.Compass = false
+    end
+end)
+Section:NewButton("Sam TP", "Cframe teleportation", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1548.90002, 263.798401, 2132.40039, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+
+end)
+
+local Section = Tab:NewSection("Fruit Farming")
+
+
+Section:NewToggle("AutoPickup Fruits", "does what u think", function(state)
+    if state then
+        _G.pro = true
+        while _G.pro do
+            wait(1)
+            for i,v in pairs(game:GetService("Workspace").Trees:GetDescendants()) do
+if v:IsA("ClickDetector") then
+fireclickdetector(v)
+end
+end
+end
+    else
+   _G.pro = false
+    end
+end)
+
+--
+local Tab = Window:NewTab("Island Teleports")
+local Section = Tab:NewSection("Locations")
+Section:NewButton("Fountain", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-237, 228, -1071, 0, 0, 1, -1, 0, 0, 0, -1, 0)
+end)
+Section:NewButton("5 Houses", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-100.5, 221.099976, -99.3699951, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Yellow House", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(723.5, 238.100006, 1205.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Sam1", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1281.5, 214.5, -1352.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Sam2", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1511.60498, 260.739105, 2132.73291, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+Section:NewButton("Small island", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4001.00024, 213.860107, -2187.48193, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+Section:NewButton("Purple island", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5215.5, 507.5, -7774.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Gunslingers", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1074.99976, 371.5, 1668.00024, -1, 0, 0, 0, -1, 0, 0, 0, 1)
+end)
+Section:NewButton("Dead Tree", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2054, 487, -608.5, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+Section:NewButton("Flail island", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1084.5, 213.5, 3325, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Random Island", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1214.5, 217.5, 627, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Little Snow", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1870.25, 220.5, 3330.25, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+Section:NewButton("Big Snow", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(6641, 415.498993, -1478.61096, 0, -1, 0, 1, 0, -0, 0, 0, 1)
+end)
+Section:NewButton("Volkun", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4913.5, 359.5, 5345, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Cresent Island", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3192.49976, 284, 1668, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+Section:NewButton("Racetrack", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6422.5415, 184.344727, 3692.08838, 0.940469503, 0.191095263, -0.281068981, -0.173501551, 0.981032133, 0.0864474028, 0.292257369, -0.0325352401, 0.955786109)
+end)
+Section:NewButton("Pillar island", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6033, 398.5, -7, 0, -1, 0, 1, 0, -0, 0, 0, 1)
+end)
+Section:NewButton("Fisherman", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1793.5, 224.5, -414, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Marine Ford", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3134, 547, -4091.5, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+Section:NewButton("Sand Castle", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1079, 241.700119, -3335, 0, 1, -0, -1, 0, 0, 0, 0, 1)
+end)
+Section:NewButton("Pursuer", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4857.62256, 602.25, -7288.24902, 0.719358087, 0, 0.694639385, 0, 1, 0, -0.694639385, 0, 0.719358087)
+end)
+Section:NewButton("Mansion", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1852.94653, 266, 846.877014, 0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, 0.707134247)
+end)
+Section:NewButton("Pyramid", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(118.400009, 301, 4946.99951, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+Section:NewButton("Kaizu", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2685, 340.5, 10389, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Flail island", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1224.5, 239.5, -273.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Trash Island", "Location", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2690.70679, 157.532455, 1045.85303, 0.918555021, 0.0486050248, 0.392293453, -0.0870108604, 0.992932379, 0.0807119161, -0.385597885, -0.108272135, 0.916292191)
+end)
+
+
+
+
+
+--
+
+local Tab = Window:NewTab("Levels")
+local Section = Tab:NewSection("Level Farm (Check all below) [Works in VIPS]")
+
+Section:NewToggle("Get Drinks", "Barrels", function(state)
+    if state then
+       _G.ong = true
+       
+       while _G.ong do
+       for i,v in pairs(game.Workspace.Barrels:GetDescendants()) do
+if v:IsA("ClickDetector") then
+fireclickdetector(v)
+end
+end
+wait(0)
+for i,v in pairs(game.Workspace.Island8.Kitchen:GetDescendants()) do
+if v:IsA("ClickDetector") then
+fireclickdetector(v)
+end
+end
+      end 
+    else
+    _G.ong = false
+    end
+end)
+
+
+Section:NewToggle("Auto Equip & Fire", "thingy", function(state)
+    if state then
+
+_G.drinks = true
+while _G.beri do
+wait(5)
+spawn(function()
+local Players = game:GetService("Players")
+local Lp = Players.LocalPlayer
+local Character = Lp.Character or Lp.CharacterAdded:Wait()
+local Humanoid = Character.Humanoid
+
+
+for i,v in pairs(Lp.Backpack:GetChildren()) do 
+if v.Name == "Crab Toy" then
+v:Destroy()
+end
+    if v:IsA("Tool") and string.find(v.Name, "Juice") or string.find(v.Name, "Milk") or string.find(v.Name, "Cider") or string.find(v.Name, "Lemonade") or string.find(v.Name, "Smoothie") or string.find(v.Name, "Golden") then 
+        Humanoid:EquipTool(v)
+        v:Activate()
+        --wait()
+    end 
+end 
+end)
+end
+
+
+    else
+        _G.drinks = false
+    end
+end)
+
+
+
+--
+
+
+local Tab = Window:NewTab("Beri Farms")
+local Section = Tab:NewSection("Beri Farm (Check everything in level farm)")
+Section:NewToggle("Beri Farm [Works in VIP servers]", "yeah", function(state)
+    if state then
+    local Lp = tostring(game:GetService("Players").LocalPlayer.UserId)
+_G.beri = true
+while _G.beri do
+    wait(0.5)
+local args = {[1] = "Claim", [2] = "Challenge13"}
+workspace.UserData["User_"..Lp].ChallengesRemote:FireServer(unpack(args))
+end
+    else
+
+    _G.beri = false
+
+    end
+end)
+
+--
+
+local Tab = Window:NewTab("Fruit Notifiers")
+local Section = Tab:NewSection("Devil Fruit Notifier")
+Section:NewTextBox("WEBHOOKURL:", "Put your webhook here.", function(txt)
+	
+	
+	
+	local Rares = {"Gravity Fruit","Rumble Fruit", "Magma Fruit","Light Fruit","Ope Fruit","Venom Fruit","Candy Fruit","Hollow Fruit","Chilly Fruit","Gas Fruit","Flare Fruit","Smoke Fruit","Sand Fruit"}
+local UltraRares = {"Quake Fruit", "Dark Fruit", "Phoenix Fruit", "Vampire Fruit"}
+local Box = {"Rare Box","Ultra Rare Box"}
+
+while wait(1.2) do
+    
+for i, x in pairs(game.Players:GetPlayers()) do
+for k, v in pairs(x.Backpack:GetChildren()) do
+if table.find(Rares, v.Name) or table.find(UltraRares, v.Name) or table.find(Box, v.Name) then
+local url = txt
+local data = {
+   ["content"] = "WAKE THE FUCK UP @everyone",
+   ["embeds"] = {
+       {
+           ["title"] = "in `".. game.Players.LocalPlayer.Name .. "`'s game" ,
+           ["description"] = "We found a " .."`" .. v.Name .. "`" .. " inside **(" .. v.Parent.Parent.Name .. "**'s Inventory)",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           }
+       }
+   }
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+        end
+    end
+end
+end
+	
+	
+end)
+--
+
+
+local Tab = Window:NewTab("DF Farm")
+
+
+
