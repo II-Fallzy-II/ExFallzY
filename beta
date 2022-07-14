@@ -184,7 +184,7 @@ Section:NewToggle("Auto Equip & Fire", "thingy", function(state)
     if state then
 
 _G.drinks = true
-while _G.beri do
+while _G.drinks do
 wait(5)
 spawn(function()
 local Players = game:GetService("Players")
