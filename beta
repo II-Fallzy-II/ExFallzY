@@ -282,7 +282,4 @@ end)
 --
 
 
-local Tab = Window:NewTab("DF Farm")
-
-
 
