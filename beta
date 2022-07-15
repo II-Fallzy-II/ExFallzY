@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/BingBao"))()
-local Window = Library.CreateLib("C.H OPL Hub || Beta v2 -- NOT FINISHED (fixed farms)", "DarkTheme")
+local Window = Library.CreateLib("C.H OPL Hub || Beta v2 -- NOT FINISHED", "DarkTheme")
 local Tab = Window:NewTab("DF Farm")
 local Section = Tab:NewSection("Compass")
 
@@ -139,7 +139,7 @@ Section:NewButton("Pyramid", "Location", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(118.400009, 301, 4946.99951, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 end)
 Section:NewButton("Kaizu", "Location", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2685, 340.5, 10389, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1575.5, 211.910004, 9939.5, 0, -1, -0, -1, 0, -0, 0, 0, -1)
 end)
 Section:NewButton("Flail island", "Location", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1224.5, 239.5, -273.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
@@ -280,4 +280,6 @@ end
 	
 end)
 --
+
+
 
