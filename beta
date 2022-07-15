@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/BingBao"))()
-local Window = Library.CreateLib("Senpaii Hub || Beta v2 -- NOT FINISHED", "DarkTheme")
+local Window = Library.CreateLib("Senpaii Hub || Beta v2.1 -- NOT FINISHED", "DarkTheme")
 local Tab = Window:NewTab("DF Farm")
 local Section = Tab:NewSection("Compass")
 
@@ -281,5 +281,63 @@ end
 end)
 --
 
+local Tab = Window:NewTab("Drinks+")
+local Section = Tab:NewSection("Stuff Related to +Drinks")
+Section:NewTextBox("Buy Cider+", "yeahuh", function(Cider)
+	for i = 1,Cider do
 
+local args = {[1] = "Cider+"}
+workspace.Merchants.BetterDrinkMerchant.Clickable.Retum:FireServer(unpack(args))
 
+end
+end)
+Section:NewTextBox("buy Lemonade+", "yeahuh", function(Lemonade)
+	for i = 1,Lemonade do
+
+local args = {[1] = "Lemonade+"}
+workspace.Merchants.BetterDrinkMerchant.Clickable.Retum:FireServer(unpack(args))
+
+end
+end)
+Section:NewTextBox("Buy Smoothie+", "yeahuh", function(Smoothie)
+	for i = 1,Smoothie do
+
+local args = {[1] = "Smoothie+"}
+workspace.Merchants.BetterDrinkMerchant.Clickable.Retum:FireServer(unpack(args))
+
+end
+end)
+Section:NewTextBox("Buy Juice+", "yeahuh", function(Juice)
+	for i = 1,Juice do
+
+local args = {[1] = "Juice+"}
+workspace.Merchants.BetterDrinkMerchant.Clickable.Retum:FireServer(unpack(args))
+
+end
+end)
+
+Section:NewToggle("Auto Drink+", "thingy", function(state)
+    if state then
+
+_G.yh = true
+
+while _G.yh do
+wait()
+local Players = game:GetService("Players")
+local Lp = Players.LocalPlayer
+local Character = Lp.Character or Lp.CharacterAdded:Wait()
+local Humanoid = Character.Humanoid
+local Backpack = Lp.Backpack
+for i,v in pairs(Backpack:GetChildren()) do 
+  if v:IsA("Tool") and string.find(v.Name, "Juice+") or string.find(v.Name, "Cider+") or string.find(v.Name, "Smoothie+") or string.find(v.Name, "Lemonade+")  then 
+      Humanoid:EquipTool(v)
+      v:Activate()
+      wait(0.1)
+    end 
+end
+end    
+    
+    else
+     _G.yh = false
+    end
+end)
