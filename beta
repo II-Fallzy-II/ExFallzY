@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/BingBao"))()
-local Window = Library.CreateLib("Anarchy(boredfrfr) Hub || Beta v2.1 -- NOT FINISHED", "DarkTheme")
+local Window = Library.CreateLib("KingSlayer Hub || Beta v2.1 -- NOT FINISHED", "DarkTheme")
 local Tab = Window:NewTab("DF Farm")
 local Section = Tab:NewSection("Compass")
 
@@ -199,6 +199,7 @@ v:Destroy()
 end
     if v:IsA("Tool") and string.find(v.Name, "Juice") or string.find(v.Name, "Milk") or string.find(v.Name, "Cider") or string.find(v.Name, "Lemonade") or string.find(v.Name, "Smoothie") or string.find(v.Name, "Golden") then 
         Humanoid:EquipTool(v)
+        wait(0.1)
         v:Activate()
         --wait()
     end 
@@ -340,4 +341,15 @@ end
     else
      _G.yh = false
     end
+end)
+
+
+--
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Stuff ig")
+Section:NewButton("Get Seastone Cestus (Requires 500 melee)", "Ez", function()
+local UserID = tostring(game.Players.LocalPlayer.UserId)
+local args = {[1] = "Seastone Cestus"}
+workspace.UserData["User_"..UserID].UpdateMelee:FireServer(unpack(args))
 end)
