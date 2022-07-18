@@ -240,7 +240,7 @@ end)
 
 local Tab = Window:NewTab("Fruit Notifiers")
 local Section = Tab:NewSection("Devil Fruit Notifier")
-Section:NewTextBox("WEBHOOKURL: (you cant change it once you put it in)", "Put your webhook here.", function(txt)
+Section:NewTextBox("WEBHOOKURL:", "Put your webhook here.", function(txt)
 	
 while wait(1.2) do
     
