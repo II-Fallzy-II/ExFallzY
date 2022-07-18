@@ -336,3 +336,11 @@ end
      _G.yh = false
     end
 end)
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Stuff ig")
+Section:NewButton("Get Seastone Cestus (Requires 500 melee)", "Ez", function()
+local UserID = tostring(game.Players.LocalPlayer.UserId)
+local args = {[1] = "Seastone Cestus"}
+workspace.UserData["User_"..UserID].UpdateMelee:FireServer(unpack(args))
+end)
