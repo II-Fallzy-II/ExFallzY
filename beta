@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/BingBao"))()
-local Window = Library.CreateLib("Senpaii Hub || Beta v2.1 -- NOT FINISHED", "DarkTheme")
+local Window = Library.CreateLib("KingSlayer Hub || Beta v2.1 -- NOT FINISHED", "DarkTheme")
 local Tab = Window:NewTab("DF Farm")
 local Section = Tab:NewSection("Compass")
 
@@ -343,4 +343,46 @@ Section:NewButton("Get Seastone Cestus (Requires 500 melee)", "Ez", function()
 local UserID = tostring(game.Players.LocalPlayer.UserId)
 local args = {[1] = "Seastone Cestus"}
 workspace.UserData["User_"..UserID].UpdateMelee:FireServer(unpack(args))
+end)
+--
+local Tab = Window:NewTab("Kills Farming")
+local Section = Tab:NewSection("Fruit Kill Farms")
+Section:NewToggle("Light Farm [Warning: Breaks Light]", "FINALLY", function(state)
+    if state then
+        
+    _G.light = true
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210.660248, 645.405396, -115.667, 0.855817854, -1.25078858e-09, 0.5172773, 3.74932512e-08, 1, -5.96132992e-08, -0.5172773, 7.04125327e-08, 0.855817854)
+wait(0.3)
+local virtualUser = game:GetService('VirtualUser')
+virtualUser:CaptureController()
+
+virtualUser:SetKeyDown('0x67')
+wait(0.1)
+virtualUser:SetKeyUp('0x67') 
+
+local pro = game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent.RemoteFunction:InvokeServer()
+
+while _G.light do
+
+for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do 
+  if v:IsA("Model") then 
+      local args = {
+    [1] = pro,
+    [2] = "LightPower8",
+    [3] = "StopCharging",
+    [4] = workspace.Enemies:FindFirstChild(v.name).Torso.CFrame,
+    [5] = workspace.IslandWindmill.Path,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
+wait(0.01)
+    end 
+end 
+end
+
+    else
+        _G.light = false
+    end
 end)
