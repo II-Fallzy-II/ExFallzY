@@ -1,1 +1,6 @@
-
+local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/WL", true))()
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/%E3%83%88%E3%83%A9%E3%83%83%E3%82%AB%E3%83%BC"))()
+else
+game:service('Players').LocalPlayer:Kick("You dont own KingSlayer HUB go buy it nerd")
+end
