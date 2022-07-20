@@ -377,7 +377,7 @@ for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Light.RemoteEvent:FireServer(unpack(args))
-wait(0.01)
+wait(0.005)
     end 
 end 
 end
