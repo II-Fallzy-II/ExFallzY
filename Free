@@ -344,4 +344,11 @@ local UserID = tostring(game.Players.LocalPlayer.UserId)
 local args = {[1] = "Seastone Cestus"}
 workspace.UserData["User_"..UserID].UpdateMelee:FireServer(unpack(args))
 end)
+
+local Section = Tab:NewSection("Player TP (case sensitive)")
+Section:NewTextBox("Username: ", "Username", function(txt)
+local segz = game.Players.LocalPlayer.Character
+local person = game.Workspace[txt].HumanoidRootPart
+segz.HumanoidRootPart.CFrame = CFrame.new(person.Position.X, person.Position.Y, person.Position.Z)
+end)
 --
