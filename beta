@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/BingBao"))()
-local Window = Library.CreateLib("KingSlayer Hub || Version 1.0", "DarkTheme")
+local Window = Library.CreateLib("KingSlayer Hub || Version 1.1", "DarkTheme")
 local Tab = Window:NewTab("DF Farm")
 local Section = Tab:NewSection("Compass")
 
@@ -344,6 +344,15 @@ local UserID = tostring(game.Players.LocalPlayer.UserId)
 local args = {[1] = "Seastone Cestus"}
 workspace.UserData["User_"..UserID].UpdateMelee:FireServer(unpack(args))
 end)
+
+local Section = Tab:NewSection("Player TP (case sensitive)")
+Section:NewTextBox("Username: ", "Username", function(txt)
+local segz = game.Players.LocalPlayer.Character
+local person = game.Workspace[txt].HumanoidRootPart
+segz.HumanoidRootPart.CFrame = CFrame.new(person.Position.X, person.Position.Y, person.Position.Z)
+end)
+
+
 --
 local Tab = Window:NewTab("Kills Farming")
 local Section = Tab:NewSection("Fruit Kill Farms")
@@ -386,3 +395,6 @@ end
         _G.light = false
     end
 end)
+--
+
+
