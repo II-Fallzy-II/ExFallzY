@@ -423,5 +423,70 @@ end
     end
 end)
 --
+local Tab = Window:NewTab("Cooldown remover")
+local Section = Tab:NewSection("USE THE ATTACK BEFORE RUNNING")
 
+Section:NewButton("Remove Phoenix cooldown (btn C)", "yes", function()
+
+local phoenix = game:GetService("Players").LocalPlayer.Character.Powers.Phoenix.RemoteEvent.RemoteFunction:InvokeServer()
+
+local UserInput = game:GetService("UserInputService")
+
+UserInput.InputBegan:Connect(function(KeyPressed, IsPressed)
+    if KeyPressed.KeyCode == Enum.KeyCode.C then
+        
+        
+        local player = game.Players.LocalPlayer;
+local mouse = player:GetMouse();
+local sex = mouse.Hit.p
+
+local args = {
+    [1] = phoenix,
+    [2] = "PhoenixPower3",
+    [3] = "StopCharging",
+    [4] = CFrame.new(sex),
+    [5] = workspace.IslandWindmill.House.Union,
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Phoenix.RemoteEvent:FireServer(unpack(args))
+
+
+
+    end
+end)
+
+end)
+
+Section:NewButton("Negative phoenix burst (reset b4 use)", "yes", function()
+
+local phoenix = game:GetService("Players").LocalPlayer.Character.Powers.Phoenix.RemoteEvent.RemoteFunction:InvokeServer()
+
+local UserInput = game:GetService("UserInputService")
+
+UserInput.InputBegan:Connect(function(KeyPressed, IsPressed)
+    if KeyPressed.KeyCode == Enum.KeyCode.C then
+        
+        
+        local player = game.Players.LocalPlayer;
+local mouse = player:GetMouse();
+local sex = mouse.Hit.p
+
+local args = {
+    [1] = phoenix,
+    [2] = "PhoenixPower3",
+    [3] = "StopCharging",
+    [4] = CFrame.new(sex),
+    [5] = workspace.IslandWindmill.House.Union,
+    [6] = -103243240
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Phoenix.RemoteEvent:FireServer(unpack(args))
+
+
+
+    end
+end)
+
+end)
 
