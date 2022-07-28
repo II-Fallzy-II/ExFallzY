@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/BingBao"))()
-local Window = Library.CreateLib("KingSlayer Hub || Version 1.6 || Paid", "DarkTheme")
+local Window = Library.CreateLib("KingSlayer Hub || Version 1.8 || Paid", "DarkTheme")
 local Tab = Window:NewTab("DF Farm")
 local Section = Tab:NewSection("Compass")
 
@@ -478,7 +478,7 @@ local args = {
     [3] = "StopCharging",
     [4] = CFrame.new(sex),
     [5] = workspace.IslandWindmill.House.Union,
-    [6] = -103243240
+    [6] = -103243240342879234897239847238947893274893274897423897243897234789324
 }
 
 game:GetService("Players").LocalPlayer.Character.Powers.Phoenix.RemoteEvent:FireServer(unpack(args))
@@ -488,5 +488,158 @@ game:GetService("Players").LocalPlayer.Character.Powers.Phoenix.RemoteEvent:Fire
     end
 end)
 
+end)
+
+local Tab = Window:NewTab("Haki")
+local Section = Tab:NewSection("Haki Farming (lag spikes can break the farm)")
+
+Section:NewToggle("Haki Farm || Low haki", "yesd", function(state)
+    if state then
+
+local segzy = "User_" .. game.Players.LocalPlayer.UserId
+_G.Haki = true
+
+while _G.Haki do 
+wait(3.5)
+for i = 1,50 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+wait(3.5)
+for i = 1,50 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+end
+
+    else
+    _G.Haki = false
+    end
+end)
+
+Section:NewToggle("Haki Farm || Medium haki", "yesd", function(state)
+    if state then
+
+local segzy = "User_" .. game.Players.LocalPlayer.UserId
+_G.Haki = true
+
+while _G.Haki do 
+wait(3.5)
+for i = 1,100 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+wait(3.5)
+for i = 1,100 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+end
+
+    else
+    _G.Haki = false
+    end
+end)
+
+Section:NewToggle("Haki Farm || Mid High Haki", "yesd", function(state)
+    if state then
+
+local segzy = "User_" .. game.Players.LocalPlayer.UserId
+_G.Haki = true
+
+while _G.Haki do 
+wait(3.5)
+for i = 1,150 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+wait(3.5)
+for i = 1,150 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+end
+
+    else
+    _G.Haki = false
+    end
+end)
+
+Section:NewToggle("Haki Farm || High Haki", "yesd", function(state)
+    if state then
+
+local segzy = "User_" .. game.Players.LocalPlayer.UserId
+_G.Haki = true
+
+while _G.Haki do 
+wait(3.5)
+for i = 1,200 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+wait(3.5)
+for i = 1,200 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+end
+
+    else
+    _G.Haki = false
+    end
+end)
+
+Section:NewToggle("Haki Farm || Very high haki", "yesd", function(state)
+    if state then
+
+local segzy = "User_" .. game.Players.LocalPlayer.UserId
+_G.Haki = true
+
+while _G.Haki do 
+wait(3.5)
+for i = 1,250 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+wait(3.5)
+for i = 1,250 do
+local args = {[1] = "On", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+wait(0.001) 
+local args = {[1] = "Off", [2] = 1}
+workspace.UserData[segzy].III:FireServer(unpack(args))
+end
+end
+
+    else
+    _G.Haki = false
+    end
 end)
 
