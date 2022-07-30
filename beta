@@ -642,4 +642,13 @@ end
     _G.Haki = false
     end
 end)
+--put update below
 
+
+
+
+
+
+--fruit notif
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/fruit"))()
