@@ -351,4 +351,11 @@ local segz = game.Players.LocalPlayer.Character
 local person = game.Workspace[txt].HumanoidRootPart
 segz.HumanoidRootPart.CFrame = CFrame.new(person.Position.X, person.Position.Y, person.Position.Z)
 end)
---
+--put update below
+
+
+
+
+--fruit
+loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/fruit"))()
+
